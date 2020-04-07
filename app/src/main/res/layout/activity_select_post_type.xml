@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".activities.SelectPostType">
+
+    <LinearLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="38dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/back"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/post_type"
+            android:layout_marginTop="15dp"
+            android:textSize="26sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Type"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp" />
+
+
+    <Spinner
+        android:drawSelectorOnTop="true"
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_spinner"
+        android:prompt="@style/SpinnerTheme"/>
+
+
+
+<RelativeLayout
+    android:layout_width="110dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end"
+    android:paddingLeft="20dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="20dp"
+    android:layout_marginTop="20dp"
+    android:background="@color/black">
+    <TextView
+        android:id="@+id/textBtN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginLeft="8dp"
+        android:text="NEXT"/>
+    <ImageView
+
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_right"
+        />
+</RelativeLayout>
+
+    </LinearLayout>
+    <ImageView
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:src="@drawable/ic_posttypelogo"/>
+
+    </RelativeLayout>

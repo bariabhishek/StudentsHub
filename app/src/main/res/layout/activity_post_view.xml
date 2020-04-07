@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.PostView">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/profilePostView"
+        android:layout_width="match_parent"
+        android:background="@color/background"
+        android:layout_height="250dp">
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="180dp"
+            android:src="@drawable/post_view_ovel"
+            android:layout_marginTop="-20dp"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:elevation="5dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_post_view_button"
+                android:src="@drawable/ic_back_left_black_24dp" />
+            <ImageView
+                android:id="@+id/menuImageButton"
+                android:elevation="5dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="4dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_post_view_button"
+                android:src="@drawable/ic_more_menu_black_24dp" />
+
+            <ImageView
+                android:elevation="5dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:layout_toLeftOf="@+id/menuImageButton"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/round_post_view_button"
+                android:src="@drawable/ic_share_black_24dp" />
+        </RelativeLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:src="@drawable/boy"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:text="@string/name_demo"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/gaduation"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="4dp"
+            android:text="Subosh public school"/>
+
+    </LinearLayout>
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:weightSum="10">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/like"/>
+            <TextView
+                android:id="@+id/likeTextPV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="24"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/dislike"/>
+            <TextView
+                android:id="@+id/dislikeTextPV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="24"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_chat_black_24dp"/>
+            <TextView
+                android:id="@+id/commentsTextPV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="24"/>
+
+
+            <TextView
+                android:id="@+id/commentsDateTimePV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:text="20-1-2020 9.30"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/postTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profilePostView"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edu"/>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/large_text"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineHeight="25dp"
+            android:textAlignment="inherit"
+            android:lineSpacingExtra="10dp"
+            android:lineSpacingMultiplier="1"
+            android:textSize="14sp"
+            android:text="@string/extra_large_text"/>
+
+    </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/latestText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/latest_post"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                android:textSize="16sp"
+                android:layout_below="@id/postTextLayout"/>
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:layout_below="@+id/latestText"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="22dp"
+               android:layout_marginTop="12dp"
+               android:layout_marginBottom="50dp"
+               android:id="@+id/LetestPostRecycle"></androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

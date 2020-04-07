@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_ask_question"
+            android:icon="@drawable/ic_question"
+            android:title="@string/ask_question" />
+        <item
+            android:id="@+id/nav_article"
+            android:icon="@drawable/ic_article"
+            android:title="@string/article" />
+        <item
+            android:id="@+id/nav_notice"
+            android:icon="@drawable/ic_notice"
+            android:title="@string/notice" />
+        <item
+            android:id="@+id/nav_video"
+            android:icon="@drawable/ic_video"
+            android:title="@string/video" />
+        <item
+            android:id="@+id/nav_document"
+            android:icon="@drawable/ic_document"
+            android:title="@string/document" />
+        <item
+            android:id="@+id/nav_fact"
+            android:icon="@drawable/ic_fact"
+            android:title="@string/fact" />
+        <item
+            android:id="@+id/nav_mcq"
+            android:icon="@drawable/ic_mcq"
+            android:title="@string/mcq" />
+    </group>
+
+    <item android:title="More Links">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share"
+                android:title="@string/share" />
+        </menu>
+    </item>
+
+</menu>

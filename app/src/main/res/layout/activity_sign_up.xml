@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".activities.SignUp">
+
+    <RelativeLayout
+        android:id="@+id/topBarSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        tools:ignore="UselessParent">
+
+        <ImageButton
+            android:id="@+id/exitSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/back"
+            tools:ignore="ContentDescription" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/su1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topBarSignUp"
+        android:layout_marginStart="15dp"
+        android:text="@string/sign_up"
+        android:textColor="@color/black"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/su2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/su1"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/please_sign_up_to_enter_app"
+        android:textColor="@color/lightblack"
+        android:textSize="16sp" />
+
+
+    <ImageView
+        android:id="@+id/su3"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/su1"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/register"
+        tools:ignore="ContentDescription" />
+
+
+    <RelativeLayout
+        android:id="@+id/fullnameSignup"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/su3"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/white">
+
+
+        <ImageView
+            android:id="@+id/iconSignUp1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/email_user"
+            tools:ignore="ContentDescription" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fullNameSULayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/iconSignUp1"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/fullnameSignupEditText"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:backgroundTint="@color/white"
+                android:hint="@string/full_name"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLength="50"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:ignore="Autofill" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/emailSignup"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/fullnameSignup"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/white">
+
+
+        <ImageView
+            android:id="@+id/iconSignUp2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/email_signup"
+            tools:ignore="ContentDescription" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailSULayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/iconSignUp2"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/emailSignupEditText"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:backgroundTint="@color/white"
+                android:hint="@string/email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:ignore="Autofill" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/passSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/emailSignup"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iconSignup3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/pass_lock"
+            tools:ignore="ContentDescription" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passSULayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/iconSignup3"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorPrimaryDark">
+
+            <EditText
+                android:id="@+id/passSignUpEditText"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:backgroundTint="@color/white"
+                android:hint="@string/password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:maxLength="15"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:ignore="Autofill" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/passConfirmSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/passSignUp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iconSignup4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/pass_lock"
+            tools:ignore="ContentDescription" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passConfirmSULayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/iconSignup4"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorPrimaryDark">
+
+            <EditText
+                android:id="@+id/passConfirmSignUpEditText"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:backgroundTint="@color/white"
+                android:hint="@string/confirm_password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLength="15"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:ignore="Autofill" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/signUpNow"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/passConfirmSignUp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_background"
+        android:text="@string/sign_up"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+</RelativeLayout>

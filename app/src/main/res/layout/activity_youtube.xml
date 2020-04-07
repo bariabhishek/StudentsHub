@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".activities.AddQuestionActivity">
+
+    <RelativeLayout
+        android:id="@+id/topBarSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        tools:ignore="UselessParent">
+
+        <ImageButton
+            android:id="@+id/exitSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="26dp"
+            android:background="@drawable/back"
+            tools:ignore="ContentDescription" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/su1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topBarSignUp"
+        android:layout_marginStart="26dp"
+        android:text="What is Lorem Ipsum?"
+        android:textColor="@color/black"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/su2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/su1"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/choose_type"
+        android:textColor="@color/lightblack"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/rectangle"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/su2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="26dp"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="3sp"
+        android:paddingStart="16dp"
+        android:text="https://www.youtube.com/watch?v=Zov7p...."
+        android:textAppearance="@style/where_does_" />
+
+    <LinearLayout
+        android:id="@+id/youtube"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:background="@drawable/img3"
+        android:layout_below="@id/rectangle"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/rectangle2"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/youtube"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="26dp"
+        android:background="#fff"
+        android:gravity="center"
+        android:lineSpacingExtra="3sp"
+        android:paddingStart="16dp"
+        android:text="How to make youtube thumbnail"
+        android:textAppearance="@style/where_does_" />
+
+    <Button
+        android:layout_width="112dp"
+        android:layout_height="51dp"
+        android:layout_below="@+id/rectangle2"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:text="Done"
+        android:id="@+id/doneButton"
+        android:textColor="#fff"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:drawableLeft="@drawable/ic_check_black_24dp"
+        android:background="@drawable/vector"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="26dp">
+    </Button>
+
+
+
+
+
+
+
+
+</RelativeLayout>

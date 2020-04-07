@@ -1,0 +1,139 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimaryDark">@color/background</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+
+        <item name="colorSecondary">?attr/colorPrimaryDark</item>
+    </style>
+
+
+    <style name="OpenSansTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@fonts/_ProximaNova_Regular</item>
+    </style>
+
+    <style name="SpinnerTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/ic_dropdown</item>
+    </style>
+
+
+    <!-- SplashScreen style -->
+    <style name="Splashscreen" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+
+    <style name="OtherFullScreen" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+
+    </style>
+
+
+    <style name="WelcomeScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimaryDark">@color/background</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+
+        <item name="colorSecondary">?attr/colorPrimaryDark</item>
+    </style>
+
+    <style name="NavigationView">
+        <item name="android:textColorSecondary">@color/colorPrimaryDark</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="where_does_">
+
+        <item name="android:textSize">
+            16sp
+        </item>
+
+        <item name="android:letterSpacing">
+            0.01
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+    </style>
+
+    <!-- styles.xml -->
+    <style name="a_in_the_co">
+
+        <item name="android:textSize">
+            14sp
+        </item>
+
+        <item name="android:letterSpacing">
+            0.01
+        </item>
+
+        <item name="android:textColor">
+            #515151
+        </item>
+
+    </style>
+    <style name="b_at_a_park">
+
+        <item name="android:textSize">
+            14sp
+        </item>
+
+        <item name="android:letterSpacing">
+            0.01
+        </item>
+
+        <item name="android:textColor">
+            #515151
+        </item>
+
+    </style>
+    <style name="d_on_a_tour">
+
+        <item name="android:textSize">
+            14sp
+        </item>
+
+        <item name="android:letterSpacing">
+            0.01
+        </item>
+
+        <item name="android:textColor">
+            #515151
+        </item>
+
+    </style>
+    <style name="c_at_a_waff">
+
+        <item name="android:textSize">
+            14sp
+        </item>
+
+        <item name="android:letterSpacing">
+            0.01
+        </item>
+
+        <item name="android:textColor">
+            #515151
+        </item>
+
+    </style>
+
+
+</resources>

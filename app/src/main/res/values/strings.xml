@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">StudentsHub</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="ask_question">Ask Question</string>
+    <string name="home">Home</string>
+    <string name="article">Article</string>
+    <string name="notice">Notice</string>
+    <string name="video">Video</string>
+    <string name="document">Document</string>
+    <string name="fact">Fact</string>
+    <string name="mcq">MCQ</string>
+    <string name="share">Share</string>
+    <string name="search">Search</string>
+    <string name="user_studentshub_in">user@studentshub.in</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="quickly_connect_with">CONNECT WITH</string>
+    <string name="continue_with_facebook">Login with Facebook</string>
+    <string name="continue_with_google">Login with Google</string>
+    <string name="not_registered_signup_now">Not a User? <u>Signup Now</u></string>
+    <string name="full_name">Full Name</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="select_type">Select Post Type</string>
+    <string name="skip"><u>Skip Now</u></string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="sign_in_to_continue">Sign in to Continue</string>
+    <string name="enter_your_login_details">Enter your Login Details</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="or_connect_with">Or connect with</string>
+    <string name="don_t_have_an_account">Don\'t have an Account ?</string>
+    <string name="please_sign_up_to_enter_app">Please sign up to enter app</string>
+    <string name="choose_type">Choose type</string>
+    <string name="where_does_">Where does Ann meet Leslie?</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="forgot_password_2">Forgot Password</string>
+    <string name="please_enter_your_registered_email_id">Please enter your registered email ID</string>
+    <string name="submit">Submit</string>
+    <string name="large_text">Why Are We The Only Humans Left?</string>
+    <string name="category">Top Category</string>
+    <string name="latest_post">Latest Post</string>D
+    <string name="name_demo">By: Yogesh Galav</string>
+    <string name="edu">EDUCATION</string>
+    <string name="post_dis">Enter your post description of your education experience</string>
+    <string name="post_type">Select Post Type</string>
+    <string name="extra_large_text">On a fine June 4th, 1996, just 37 seconds after the celebrated launch, Ariane 5 rocket flipped 90 degrees in the wrong direction. Mission critical alarms started banging inside mission control; off the coast of French Guiana.
+The rocket was making an abrupt course correction that was not needed, compensating for a wrong turn that had not taken place. In short, the on-board computer had concluded that a deviation in telemetry had occurred and it took measures by correcting the course — turning the rocket 90 degrees in the wrong direction. The computer looked at the Flight data coming from the Inertial Guidance system — the eyes and ears of the rocket- and saw Bizarre and nonsensical data.
+Somewhere inside the code base of the Inertial Guidance system, a sub-routine code module written in Ada — a statically typed, object oriented programming language extended mainly from Pascal, was trying to cram a 64 bit floating point number into an unprotected 16 bit signed integer, causing a processor trap — and a hardware exception,
+Somewhere inside the code base of the Inertial Guidance system, a sub-routine code module written </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="student">Student</string>
+    <string name="lorem">Lorem fauf afahf ahfiuah faifhaf fkfjirgjf gfijiov kskbc akda</string>
+    <string name="teacher">Teacher</string>
+    <string name="knowledge_seeker">Knowledge Seeker</string>
+</resources>

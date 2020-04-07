@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".activities.AddQuestionActivity">
+
+    <RelativeLayout
+        android:id="@+id/topBarSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        tools:ignore="UselessParent">
+
+        <ImageButton
+            android:id="@+id/exitSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/back"
+            tools:ignore="ContentDescription" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/su1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topBarSignUp"
+        android:layout_marginStart="26dp"
+        android:text="@string/select_type"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/su2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/su1"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/choose_type"
+        android:textColor="@color/lightblack"
+        android:textSize="16sp" />
+
+
+    <EditText  android:id="@+id/rectangle"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/su2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+         android:layout_margin="26dp"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="3sp"
+        android:paddingStart="16dp"
+        android:text="@string/where_does_"
+        android:textAppearance="@style/where_does_"
+        android:textStyle="bold" />
+
+    <!-- (A) In the construction pit behind Ann's house -->
+    <TextView
+        android:id="@+id/a_in_the_co"
+        android:layout_below="@id/rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="10dp"
+        android:text="(A)  In the construction pit behind Ann's house"
+        android:textAppearance="@style/a_in_the_co"
+        android:lineSpacingExtra="1sp"
+        android:gravity="center_vertical"
+        />
+
+    <TextView
+        android:id="@+id/b_at_a_park"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/a_in_the_co"
+        android:text="(B)  At a Parks and Recreation Department \n      community forum"
+        android:textAppearance="@style/b_at_a_park"
+        android:lineSpacingExtra="1sp"
+        android:gravity="center_vertical"
+        />
+
+
+
+
+    <!-- (C) At a waffle eating contest -->
+    <TextView
+        android:id="@+id/c_at_a_waff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="42dp"
+        android:text="(C)  At a waffle eating contest"
+        android:textAppearance="@style/c_at_a_waff"
+        android:lineSpacingExtra="1sp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/b_at_a_park"
+        />
+
+
+
+
+
+    <!-- (D) On a tour of Pawnee City Hall -->
+    <TextView
+        android:id="@+id/d_on_a_tour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="42dp"
+        android:text="(D)  On a tour of Pawnee City Hall"
+        android:textAppearance="@style/d_on_a_tour"
+        android:lineSpacingExtra="1sp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/c_at_a_waff"
+        />
+
+    <LinearLayout
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/d_on_a_tour"
+        android:layout_alignParentEnd="true"
+        android:gravity="end"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="26dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+
+            android:src="@drawable/ic_add_circle_outline_black_24dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Add Option"
+            android:textSize="16sp"
+            android:textColor="#021EE8"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+
+
+
+ <LinearLayout
+     android:id="@+id/addQuestion"
+     android:layout_width="0dp"
+     android:layout_height="55dp"
+     android:layout_below="@+id/addButton"
+     android:layout_alignParentStart="true"
+     android:layout_alignParentEnd="true"
+     android:layout_marginStart="26dp"
+     android:layout_marginEnd="26dp"
+     android:background="@drawable/background_btn_wrong"
+     android:layout_marginTop="60dp"
+     android:orientation="horizontal"
+     android:gravity="center">
+
+     <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="40dp"
+         android:layout_gravity="center"
+         android:src="@drawable/ic_add_circle_outline_black_24dp" />
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text=" Add Question"
+         android:textSize="16sp"
+         android:gravity="center"
+         android:textColor="#021EE8"
+         android:layout_gravity="center_vertical"/>
+
+ </LinearLayout>
+
+
+    <Button
+        android:layout_width="112dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/addQuestion"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:text="Done"
+        android:id="@+id/doneButton"
+       android:textColor="#fff"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:drawableLeft="@drawable/ic_check_black_24dp"
+        android:background="@drawable/vector"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="26dp">
+    </Button>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
