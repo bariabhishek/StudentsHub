@@ -14,6 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".activities.NoticeActivity"></activity>
         <activity android:name=".activities.Document">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
