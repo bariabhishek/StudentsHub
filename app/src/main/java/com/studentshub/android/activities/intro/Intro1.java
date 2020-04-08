@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.studentshub.android.R;
 
@@ -16,7 +17,7 @@ import com.studentshub.android.R;
  */
 public class Intro1 extends Fragment {
 
-
+    public TextView next;
     public Intro1() {
         // Required empty public constructor
     }
@@ -26,7 +27,10 @@ public class Intro1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_intro1, container, false);
+        View view=inflater.inflate(R.layout.fragment_intro1, container, false);
+        next=view.findViewById(R.id.introTV1);
+
+        return view;
     }
 
 }

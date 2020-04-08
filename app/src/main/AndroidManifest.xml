@@ -14,36 +14,27 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".activities.NoticeActivity"></activity>
-        <activity android:name=".activities.Document">
+        <activity android:name=".activities.CreateQuestionActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.FactPage">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".activities.NoticeActivity" />
+        <activity android:name=".activities.Document"></activity>
+        <activity android:name=".activities.FactPage"></activity>
         <activity android:name=".YoutubeActivity" />
         <activity android:name=".activities.AddQuestionActivity" />
         <activity android:name=".activities.PostView" />
         <activity
             android:name=".activities.intro.IntroActivity"
-            android:theme="@style/OtherFullScreen" />
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        </activity>
         <activity
             android:name=".activities.SelectPostType"
-            android:theme="@style/OtherFullScreen">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/OtherFullScreen"></activity>
         <activity
             android:name=".activities.ForgotPassword"
             android:screenOrientation="portrait"
@@ -66,11 +57,7 @@
         <activity
             android:name=".activities.SplashScreen"
             android:theme="@style/Splashscreen">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity> <!-- Firebase Notifications -->
         <service
             android:name=".services.MyFirebaseMessagingService"

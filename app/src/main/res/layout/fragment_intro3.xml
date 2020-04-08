@@ -33,8 +33,9 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="25dp"
             android:text="@string/knowledge_seeker"
-            android:textColor="@color/black"
-            android:textSize="24sp" />
+            android:textStyle="bold"
+            android:textAppearance="@style/teacher"
+          />
 
         <TextView
             android:id="@+id/introTV2"
@@ -45,8 +46,7 @@
             android:layout_margin="15dp"
             android:text="@string/lorem"
             android:textAlignment="center"
-            android:textColor="@color/lightblack"
-            android:textSize="18sp" />
+           android:textAppearance="@style/contrary_to" />
 
     </RelativeLayout>
 
