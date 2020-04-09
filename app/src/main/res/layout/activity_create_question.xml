@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
     tools:context=".activities.AddQuestionActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <RelativeLayout
         android:id="@+id/topBarSignUp"
@@ -15,7 +19,7 @@
         tools:ignore="UselessParent">
 
         <ImageButton
-            android:id="@+id/exitSignUp"
+            android:id="@+id/backBtnImage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -40,200 +44,284 @@
         android:textSize="28sp"
         android:textStyle="bold" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/su1"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/topBarSignUp"
-            android:layout_marginStart="26dp"
-            android:layout_marginEnd="26dp"
-            android:padding="2dp"
-            android:text="Question title"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
-
-
-        <EditText
-            android:id="@+id/rectangle"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_below="@+id/su2"
-            android:layout_marginStart="26dp"
-            android:layout_marginEnd="26dp"
-            android:layout_marginBottom="10dp"
-            android:background="#fff"
-            android:gravity="center_vertical"
-            android:lineSpacingExtra="3sp"
-            android:paddingStart="16dp"
-            android:text="@string/where_does_"
-            android:textAppearance="@style/where_does_"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/topBarSignUp"
-            android:layout_marginStart="26dp"
-            android:layout_marginEnd="26dp"
-            android:padding="2dp"
-            android:text="Options"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginStart="26dp"
-            android:layout_marginEnd="26dp"
-            android:background="#fff"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp">
+            android:layout_height="match_parent"
+            android:layout_below="@id/su1"
+            android:orientation="vertical"
+            android:layout_marginBottom="80dp">
 
-            <CheckBox
-                android:id="@+id/optionCheckA"
-                android:layout_width="0dp"
-                android:button="@drawable/check_box_color"
-                android:layout_height="match_parent"
-                android:layout_weight=".1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topBarSignUp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="26dp"
+                android:padding="2dp"
+                android:text="Question title"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
 
             <EditText
-                android:id="@+id/optionEditA"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight=".9"
-                android:text="American"
-                android:textSize="14sp" />
+                android:id="@+id/questionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="26dp"
+                android:layout_marginBottom="10dp"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="3sp"
+                android:paddingStart="16dp"
+                android:text="@string/where_does_"
+                android:textAppearance="@style/where_does_"
+                android:textStyle="bold" />
 
-        </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topBarSignUp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="26dp"
+                android:padding="2dp"
+                android:text="Options"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginStart="26dp"
-            android:layout_marginEnd="26dp"
-            android:background="#fff"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="26dp"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
 
-            <CheckBox
-                android:id="@+id/optionCheckB"
-                android:layout_width="0dp"
-                android:button="@drawable/check_box_color"
-                android:layout_height="match_parent"
-                android:layout_weight=".1" />
+                <ImageView
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1"
+                    android:padding="3dp"
+                    android:src="@drawable/num1"
+                    android:tint="@color/black" />
+
+                <EditText
+                    android:id="@+id/optionEditA"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".9"
+                    android:text="American"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="26dp"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <ImageView
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1"
+                    android:padding="3dp"
+                    android:src="@drawable/num2"
+                    android:tint="@color/black" />
+
+                <EditText
+                    android:id="@+id/optionEditB"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".9"
+                    android:text="Chinese"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="26dp"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <ImageView
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1"
+                    android:padding="3dp"
+                    android:src="@drawable/num3"
+                    android:tint="@color/black" />
+
+                <EditText
+                    android:id="@+id/optionEditC"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".9"
+                    android:text="Thai"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="26dp"
+                android:layout_marginBottom="16dp"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <ImageView
+                    android:id="@+id/optionCheckD"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1"
+                    android:padding="3dp"
+                    android:src="@drawable/num4"
+                    android:tint="@color/black" />
+
+                <EditText
+                    android:id="@+id/optionEditD"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".9"
+                    android:text="Indian"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="26dp"
+                android:padding="2dp"
+                android:text="Correct answer"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="26dp"
+                android:layout_marginBottom="16dp"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <RadioGroup
+                    android:id="@+id/correctRadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight=".5"
+                        android:button="@drawable/radio_1"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:id="@+id/radio_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight=".5"
+                        android:button="@drawable/radio_2" />
+
+                    <RadioButton
+                        android:id="@+id/radio_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+
+                        android:layout_marginStart="10dp"
+                        android:layout_weight=".5"
+                        android:button="@drawable/radio_3" />
+
+                    <RadioButton
+                        android:id="@+id/radio_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight=".5"
+                        android:button="@drawable/radio_4"
+                        android:gravity="center" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="26dp"
+                android:padding="2dp"
+                android:text="Short description about Answer"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
 
             <EditText
-                android:id="@+id/optionEditB"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight=".9"
-                android:text="Chinese"
-                android:textSize="14sp" />
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="26dp"
+                android:layout_marginBottom="10dp"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="3sp"
+                android:paddingStart="16dp"
+                android:text=""
+                android:textAppearance="@style/where_does_"
+                android:textStyle="bold"
+                android:id="@+id/shortAnswer"/>
 
+            <Button
+                android:id="@+id/doneButton"
+                android:layout_width="112dp"
+                android:layout_height="45dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="26dp"
+                android:background="@drawable/vector"
+                android:drawableLeft="@drawable/ic_check_black_24dp"
+                android:gravity="center"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="Done"
+                android:textColor="#fff" />
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginStart="26dp"
-            android:layout_marginEnd="26dp"
-            android:background="#fff"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp">
+    </RelativeLayout>
 
-            <CheckBox
-                android:id="@+id/optionCheckC"
-                android:layout_width="0dp"
-                android:button="@drawable/check_box_color"
-                android:layout_height="match_parent"
-                android:layout_weight=".1" />
-
-            <EditText
-                android:id="@+id/optionEditC"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight=".9"
-                android:text="Thai"
-                android:textSize="14sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginStart="26dp"
-            android:layout_marginEnd="26dp"
-            android:layout_marginBottom="16dp"
-            android:background="#fff"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp">
-
-            <CheckBox
-                android:id="@+id/optionCheckD"
-                android:layout_width="0dp"
-                android:button="@drawable/check_box_color"
-                android:layout_height="match_parent"
-                android:layout_weight=".1" />
-
-            <EditText
-                android:id="@+id/optionEditD"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight=".9"
-                android:text="Indian"
-                android:textSize="14sp" />
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/topBarSignUp"
-            android:layout_marginStart="26dp"
-            android:layout_marginEnd="26dp"
-            android:padding="2dp"
-            android:text="Description"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/topBarSignUp"
-            android:layout_marginStart="26dp"
-            android:layout_marginEnd="26dp"
-            android:lineSpacingExtra="1sp"
-            android:padding="2dp"
-            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
-
-        <Button
-            android:id="@+id/doneButton"
-            android:layout_width="112dp"
-            android:layout_height="45dp"
-            android:layout_gravity="end"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="26dp"
-            android:background="@drawable/vector"
-            android:drawableLeft="@drawable/ic_check_black_24dp"
-            android:gravity="center"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
-            android:text="Done"
-            android:textColor="#fff" />
-    </LinearLayout>
-
-
-</RelativeLayout>
+</ScrollView>
