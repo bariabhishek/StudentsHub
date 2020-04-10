@@ -7,13 +7,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.jaredrummler.android.colorpicker.ColorPickerDialog;
+import com.jaredrummler.android.colorpicker.ColorPickerDialogListener;
 import com.studentshub.android.R;
 
 import jp.wasabeef.richeditor.RichEditor;
 
-public class NoticeActivity extends AppCompatActivity {
+public class NoticeActivity extends AppCompatActivity implements ColorPickerDialogListener {
     private RichEditor mEditor;
     private TextView mPreview;
+    private static final int DIALOG_TEXT_FORE_COLOR_ID = 0;
+    private static final int DIALOG_TEXT_BACK_COLOR_ID = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +25,6 @@ public class NoticeActivity extends AppCompatActivity {
         mEditor = (RichEditor) findViewById(R.id.editor);
         mEditor.setEditorHeight(200);
         mEditor.setEditorFontSize(22);
-        mEditor.setEditorFontColor(Color.RED);
         //mEditor.setEditorBackgroundColor(Color.BLUE);
         //mEditor.setBackgroundColor(Color.BLUE);
         //mEditor.setBackgroundResource(R.drawable.bg);
@@ -125,8 +128,15 @@ public class NoticeActivity extends AppCompatActivity {
             private boolean isChanged;
 
             @Override public void onClick(View v) {
-                mEditor.setTextColor(isChanged ? Color.BLACK : Color.RED);
-                isChanged = !isChanged;
+                ColorPickerDialog.newBuilder()
+                        .setDialogId(DIALOG_TEXT_FORE_COLOR_ID)
+                        .setDialogTitle(R.string.dialog_title_text_color)
+                        .setShowAlphaSlider(false)
+                        .setAllowCustom(true)
+                        .show(NoticeActivity.this);
+
+
+
             }
         });
 
@@ -134,8 +144,15 @@ public class NoticeActivity extends AppCompatActivity {
             private boolean isChanged;
 
             @Override public void onClick(View v) {
-                mEditor.setTextBackgroundColor(isChanged ? Color.TRANSPARENT : Color.YELLOW);
-                isChanged = !isChanged;
+
+                ColorPickerDialog.newBuilder()
+                        .setDialogId(DIALOG_TEXT_BACK_COLOR_ID)
+                        .setDialogTitle(R.string.dialog_title_text_color)
+                        .setShowAlphaSlider(false)
+                        .setAllowCustom(true)
+                        .show(NoticeActivity.this);
+
+
             }
         });
 
@@ -189,14 +206,14 @@ public class NoticeActivity extends AppCompatActivity {
 
         findViewById(R.id.action_insert_image).setOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View v) {
-                mEditor.insertImage("http://www.1honeywan.com/dachshund/image/7.21/7.21_3_thumb.JPG",
-                        "dachshund");
+                mEditor.insertImage("",
+                        "");
             }
         });
 
         findViewById(R.id.action_insert_link).setOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View v) {
-                mEditor.insertLink("https://github.com/wasabeef", "wasabeef");
+                mEditor.insertLink("", "");
             }
         });
         findViewById(R.id.action_insert_checkbox).setOnClickListener(new View.OnClickListener() {
@@ -204,5 +221,20 @@ public class NoticeActivity extends AppCompatActivity {
                 mEditor.insertTodo();
             }
         });
+    }
+
+    @Override
+    public void onColorSelected(int dialogId, int color) {
+        if(dialogId==1){
+            mEditor.setTextColor(color);
+
+        }else {
+            mEditor.setTextBackgroundColor(color);
+        }
+    }
+
+    @Override
+    public void onDialogDismissed(int dialogId) {
+
     }
 }

@@ -14,27 +14,30 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".activities.RichText">
+
+        </activity>
         <activity android:name=".activities.MCQActivity">
+
+        </activity>
+        <activity android:name=".activities.NoticeActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.NoticeActivity" />
-        <activity android:name=".activities.Document"></activity>
-        <activity android:name=".activities.FactPage"></activity>
+        <activity android:name=".activities.Document" />
+        <activity android:name=".activities.FactPage" />
         <activity android:name=".YoutubeActivity" />
         <activity android:name=".activities.AddQuestionActivity" />
         <activity android:name=".activities.PostView" />
         <activity
             android:name=".activities.intro.IntroActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
-
-        </activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
         <activity
             android:name=".activities.SelectPostType"
-            android:theme="@style/OtherFullScreen"></activity>
+            android:theme="@style/OtherFullScreen" />
         <activity
             android:name=".activities.ForgotPassword"
             android:screenOrientation="portrait"
@@ -56,9 +59,7 @@
             android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".activities.SplashScreen"
-            android:theme="@style/Splashscreen">
-
-        </activity> <!-- Firebase Notifications -->
+            android:theme="@style/Splashscreen"></activity> <!-- Firebase Notifications -->
         <service
             android:name=".services.MyFirebaseMessagingService"
             tools:ignore="ExportedService">
